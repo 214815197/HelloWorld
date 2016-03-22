@@ -1,0 +1,120 @@
+@import "_variants";
+@import "_common";
+.wizardContainer {
+    width: 580px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 2px #EEE solid;
+    border-radius: 8px;
+    background: #00CCFF;
+    font-size: 16px;
+    @include boxshadow();
+}
+.wizard {
+}
+.stage {
+    width: 580px;
+    height: 480px;
+    position: relative;
+
+    .phase {
+        padding: 0 10px;
+        width: 560px;
+        background-color: #FFF;
+    }
+
+    .top {
+        top: 0px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px #CCC solid;
+        border-radius: 5px 5px 0 0;
+        background-color: #00CCFF;
+        color: #FFF;
+        @include setOpacity();
+    }
+
+    .stageWrap {
+        height: 399px;
+        background-color: #FFF;
+        border-bottom: 1px #CCC solid;
+        .title {
+            color: #00CCFF;
+        }
+
+        .nodeDesc {
+            font-weight: bold;
+        }
+
+        .important {
+            color: #F56C38;
+            font-weight: bold;
+        }
+
+        .sel {
+            width: 400px;
+            height: 30px;
+            padding: 10px;
+            border: 1px #999 solid;
+            resize: none;
+            outline: none;
+            background-color: #FFF;
+            font-size: 14px;
+        }
+
+        .finishDesc {
+            font-size: 16px;
+        }
+
+        .text {
+            height: 30px;
+            width: 400px;
+            padding: 0 10px;
+            font-size: 14px;
+
+            &.dbUser, &.dbPsw {
+                width: 320px;
+            }
+        }
+        .wrap {
+            padding: 10px;
+            .formWrap {
+                padding: 10px;
+                position: relative;
+                .nodeType {
+                    height: 120px;
+                    line-height: 120px;
+
+                    .type {
+                        height: 80px;
+                        width: 80px;
+                        text-align: center;
+                        line-height: 80px;
+                    }
+
+                    .typeName {
+                        margin: 0 20px;
+                    }
+
+                    .desc {
+                        height: 48px;
+                        width: 320px;
+                        line-height: 24px;
+                        text-align: left;
+                        font-size: 12px;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        height: 40px;
+        line-height: 40px;
+        bottom: 0px;
+        border-radius: 0 0 5px 5px;
+        position: relative;
+        .btnWrap {}
+    }
+}

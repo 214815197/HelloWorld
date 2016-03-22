@@ -1,0 +1,75 @@
+.centerWrap {
+    background: #CCC;
+    padding: 20px;
+}
+
+.operation {
+    height: 120px;
+    min-width: 740px;
+    text-align: center;
+
+    .operaCol {
+        height: 100px;
+        line-height: 100px;
+        width: 300px;
+        background-color: #FFF;
+        border-radius: 8px;
+        padding: 10px;
+
+        .row {
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .btn {
+            width: 90px;
+            height: 60px;
+
+            &.off {
+                background-color: #FF1719;
+                &:hover {
+                    background-color: #FF1719;
+                    @include button_inset_boxshadow();
+                }
+            }
+        }
+
+        .desc {
+            height: 20px;
+            line-height: 20px;
+            color: #CCC;
+        }
+
+        .info {
+            height: 100%;
+            width: 100%;
+            margin-top: -5px;
+            .infoUl {
+                padding: 0;
+                padding-left: 40px;
+                width: 260px;
+            }
+            .infoRow {
+                height: 30px;
+                line-height: 30px;
+                text-align: left;
+
+                .title {
+                    height: 30px;
+                    line-height: 30px;
+                    margin-right: 30px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+.status {
+    background-color: #FFF;
+    width: 740px;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 5px;
+}

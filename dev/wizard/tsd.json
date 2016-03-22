@@ -1,0 +1,12 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "include",
+  "bundle": "include/tsd.d.ts",
+  "installed": {
+    "react/react.d.ts": {
+      "commit": "eab2e0487e9685952db58e487d484a1c342ec670"
+    }
+  }
+}

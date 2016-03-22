@@ -1,0 +1,127 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font: 12px "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+}
+
+input, div, span, p, button, a, form, li {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+}
+
+.main {
+    background-color: #D3D3D3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    min-height: 660px;
+}
+
+.title {
+    height: 40px;
+    line-height: 40px;
+}
+
+.input {
+    height: 30px;
+    line-height: 30px;
+}
+
+.desc {
+    color: #000;
+    font-size: 12px;
+    min-height: 16px;
+    line-height: 16px;
+}
+
+.btn {
+    border: 1px #CCC solid;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    width: 78px;
+    height: 28px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        color: #FFF;
+        background-color: #00CCFF;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &.disabled {
+        background-color: #EEE;
+        color: #FFF;
+        cursor: not-allowed;
+        &:hover {
+            color: #FFF;
+            background-color: #EEE;
+        }
+    }
+}
+
+.ibtn {
+    border: 1px #CCC solid;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    img {
+        vertical-align: middle;
+    }
+
+    &.selected {
+        border: 2px #00CCFF solid;
+    }
+}
+
+.left {
+    position: absolute;
+    left: 5px;
+}
+
+.right {
+    position: absolute;
+    right: 5px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.alert, .confirm {
+    .icon {
+        color: #FF7600;
+        font-size: 32px;
+        margin-right: 12px;
+        margin-top: 0;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+}

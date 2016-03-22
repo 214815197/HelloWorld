@@ -1,0 +1,321 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font: 12px "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+}
+
+input, div, span, p, button, a, form, li {
+    font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 5px;
+
+    li {
+        margin: 0;
+        padding: 0;
+        margin: 5px 0;
+    }
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+// ============================ 布局样式 ============================
+.main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 660px;
+
+    .container {
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        background-color: #CCC;
+    }
+}
+
+.wrap {
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: $c_hilite;
+    position: fixed;
+    z-index:999;
+    @include setOpacity();
+}
+
+.sideBar {
+    width: 180px;
+    position: fixed;
+    top: 50px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #22282E;
+}
+
+.centerFrame {
+    position: absolute;
+    left: 180px;
+    top: 50px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #CCC;
+    z-index: 100;
+    &.miniSideBar{
+        left: 50px;
+    }
+    &.fullSideBar{
+        left: 180px;
+    }
+}
+
+.centerWrap {
+    background: #CCC;
+    padding: 20px;
+}
+
+.row {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 120px;
+    line-height: 120px;
+}
+
+.col {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+$col_w: 8%;
+.col-1 {
+    @extend .col;
+    width: $col_w;
+}
+
+.col-2 {
+    @extend .col;
+    width: $col_w * 2;
+}
+
+.col-3 {
+    @extend .col;
+    width: $col_w * 3;
+}
+
+.col-4 {
+    @extend .col;
+    width: $col_w * 4;
+}
+
+.col-5 {
+    @extend .col;
+    width: $col_w * 5;
+}
+
+.col-6 {
+    @extend .col;
+    width: $col_w * 6;
+}
+
+.col-7 {
+    @extend .col;
+    width: $col_w * 7;
+}
+
+.col-8 {
+    @extend .col;
+    width: $col_w * 8;
+}
+
+.col-9 {
+    @extend .col;
+    width: $col_w * 9;
+}
+
+.col-10 {
+    @extend .col;
+    width: $col_w * 10;
+}
+
+.col-11 {
+    @extend .col;
+    width: $col_w * 11;
+}
+
+.col-12 {
+    @extend .col;
+    width: $col_w * 12;
+}
+
+.splitLeft {
+    margin-right: 100px;
+}
+
+.left {
+    position: absolute;
+    left: 5px;
+}
+
+.right {
+    position: absolute;
+    right: 5px;
+}
+
+.middle {
+    padding: 10px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+// ============================ 组件样式 ============================
+.panel {
+    margin: 0 auto;
+    @include setOpacity();
+    @include boxshadow();
+    .panelTitle {
+        background-color: #00CCFF;
+        padding: 0 20px;
+        font-size: 16px;
+        color: #000;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.logo {
+    height: 50px;
+    line-height: 50px;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 50%;
+    font-size: 24px;
+    margin-top: -12px;
+    color: #FFF;
+}
+
+.title {
+    height: 40px;
+    line-height: 40px;
+}
+
+.desc {
+    color: #000;
+    min-height: 16px;
+    line-height: 16px;
+}
+
+.input {
+    height: 40px;
+}
+
+.btn {
+    border: 1px #CCC solid;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    width: 78px;
+    height: 28px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        color: #FFF;
+        background-color: #00CCFF;
+    }
+
+    p {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    &.disabled {
+        background-color: #EEE;
+        color: #FFF;
+        cursor: not-allowed;
+        &:hover {
+            color: #FFF;
+            background-color: #EEE;
+        }
+    }
+}
+
+.ibtn {
+    border: 1px #CCC solid;
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+
+    img {
+        vertical-align: middle;
+        outline: none;
+    }
+
+    &.selected {
+        border: 2px #00CCFF solid;
+    }
+}
+
+.alert, .confirm {
+    &.row {
+        width: auto;
+    }
+    .icon {
+        color: #FF7600;
+        font-size: 32px;
+        margin-right: 12px;
+        margin-top: 0;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+}
+
+.confirm {
+    .icon {
+        color: #FF7600;
+    }
+}

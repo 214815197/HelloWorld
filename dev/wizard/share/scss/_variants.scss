@@ -1,0 +1,24 @@
+@mixin setOpacity($opacity:0.7){
+    filter:alpha(opacity=$opacity*100);
+    -moz-opacity:$opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;
+}
+@mixin vertical($left, $top){
+    left: 50%;
+    top: 50%;
+    margin-left: $left;
+    margin-top: $top;
+}
+
+@mixin button_inset_boxshadow(){
+    -moz-box-shadow: inset 1px 1px 3px -1px #666;
+    -webkit-box-shadow: inset 1px 1px 3px -1px #666;
+    box-shadow: inset 1px 1px 3px -1px #666;
+}
+
+@mixin boxshadow(){
+    -moz-box-shadow: 2px 2px 10px 2px #333;
+    -webkit-box-shadow: 2px 2px 10px 2px #333;
+    box-shadow: 2px 2px 10px 2px #333;
+}

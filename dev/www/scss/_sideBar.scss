@@ -1,0 +1,96 @@
+.mini {
+    width: 50px;
+    &.sideBar{
+        width: 50px;
+    }
+
+    .module .title {
+        display: none;
+    }
+}
+
+.full {
+    width: 180px;
+    &.sidebar{
+        width: 180px;
+    }
+
+    .module .title {
+        display: inline-block;
+    }
+}
+
+.indent {
+    height: 30px;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    .icon {
+        font-size: 12px;
+        margin-top: -6px;
+    }
+}
+
+.modules {
+    .moduleUl{
+        padding: 0;
+        .module {
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+
+            &:hover, &.active {
+                background-color: $c_hilite;
+                color: #FFF;
+                cursor: pointer;
+                .icon {
+                    color: #FFF;
+                }
+            }
+
+            &.disable {
+                cursor: not-allowed;
+                .icon {
+                    color: #606060;
+                }
+                .title {
+                    color: #606060;
+                }
+                &:hover {
+                    background-color: #22282E;
+                    color: #606060;
+                    .icon {
+                        color: #606060;
+                    }
+                    .title {
+                        color: #606060;
+                    }
+                }
+            }
+
+            .col {
+                vertical-align: top;
+            }
+            .icon {
+                font-size: 16px;
+                margin-top: -7px;
+                text-align: center;
+                width: 50px;
+                color: #aeb9c2;
+            }
+            .title {
+                font-size: 12px;
+                color: #FFF;
+            }
+        }
+
+    }
+}
+// <li class="col">
+//     <span class="icon icon-home col active"></span>
+//     <span class="title col hide">111</span>
+// </li>
+

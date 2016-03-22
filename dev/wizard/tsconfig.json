@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "newLine": "LF",
+        "target": "es3",
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "outFile": "var/build/controls.js",
+        "sourceMap": false,
+        "jsx": "react"
+    },
+    "files": [
+        "lib/Controls.ts"
+    ]
+}

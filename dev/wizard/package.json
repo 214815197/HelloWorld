@@ -1,0 +1,32 @@
+{
+  "name": "wizard",
+  "version": "0.1.0",
+  "description": "数据库同步工具初始化引导程序（TypeScript 版）",
+  "main": "index.js",
+  "dependencies": {
+    "es6-promise": "^3.1.2"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.2",
+    "gulp-typescript": "^2.12.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-insert": "^0.5.0",
+    "gulp-replace": "^0.5.4",
+    "del": "^2.2.0",
+    "scss": "^0.2.4",
+    "typescript": "^1.6.2",
+    "tslint": "^3.5.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "姚尧 <yaogaoyu@qq.com>"
+}
